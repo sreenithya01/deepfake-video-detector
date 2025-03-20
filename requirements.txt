@@ -1,0 +1,5 @@
+streamlit
+torch
+torchvision
+Pillow
+opencv-python==4.5.5.64
