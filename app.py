@@ -1,5 +1,9 @@
 # Force fresh rebuild - 20 Mar
 # Force rebuild for Streamlit Cloud
+import subprocess
+ffmpeg_check = subprocess.run(["which", "ffmpeg"], stdout=subprocess.PIPE)
+st.write("FFMPEG path:", ffmpeg_check.stdout.decode().strip())
+
 import streamlit as st
 import torch
 import torch.nn.functional as F
